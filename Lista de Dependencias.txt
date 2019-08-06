@@ -1,0 +1,37 @@
+***********************************************************************************
+--> npm install --save express
+--> npm install --save express-handlebars
+--> npm install body-parser --save
+--> npm install --save mongoose
+--> npm install --save express-session
+--> npm install --save connect-flash
+--> npm install --save bcryptjs (modulo para fazer hash das senhas)
+--> npm install --save passport (serve para usar como forma de autenticação. Ex.: Local,Facebook, Twitter, Google...)
+--->npm install --save passport-local (usado após a instalação do passport)
+
+***********************************************************************************
+Para finalizar o projeto
+--->> npm init
+
+***********************************************************************************
+criar o script para iniciar o projeto. 
+cadastrar o comando start:
+---> "scripts":{
+	"test":"echo \"Error: no test specified\" && exit 1",
+	"start": "node app.js" //esse comando aqui que deve ser feito
+}
+
+
+***********************************************************************************
+Podemos criar o banco de dados online no 
+mLab ou Clusters Atlas MongoDB
+Heroku.com
+***********************************************************************************
+--->Parte do GIT
+=> criar o arquivo .gitignore
+=> git init
+=> git add .
+=> git commit -am "initial commit"
+=>
+=>
+

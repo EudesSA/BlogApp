@@ -1,0 +1,28 @@
+<div class="jumbotron">
+  <h1 class="display-4">Bem-vindo ao Blog criado com NodeJS !</h1>
+  <p class="lead">O Node é similar em design e influenciado por sistemas como o Ruby Event Machine ou o Python's Twisted . O nó leva o modelo de evento um pouco mais longe. Ele apresenta um loop de eventos como uma construção de tempo de execução em vez de uma biblioteca. Em outros sistemas, há sempre uma chamada de bloqueio para iniciar o loop de eventos. </p>
+  <hr class="my-4">
+  <p>Node.js é um interpretador, com código aberto, de código JavaScript de modo assíncrono e orientado a eventos, focado em migrar a programação do Javascript do lado do cliente para os servidores, criando assim aplicações de alta escalabilidade (como um servidor web[1]), capazes de manipular milhares de conexões/requisições simultâneas em tempo real, numa única máquina física.[2] O Node.js é baseado no interpretador V8 JavaScript Engine (interpretador de JavaScript open source implementado pelo Google em C++ e utilizado pelo Chrome). Foi criado por Ryan Dahl em 2009, e seu desenvolvimento é mantido pela fundação Node.js em parceria com a Linux Foundation.</p>
+  <a class="btn btn-primary btn-lg" href="/usuarios/registro" role="button">Crie uma Conta</a>
+</div>
+
+
+<hr>
+
+<h2>Postagens recentes: </h2>
+
+{{#each postagens}}
+    <div class="card mt-4">
+        <div class="card-body">            
+            <h3>{{titulo}}</h3>
+            <p>{{descricao}}</p>
+            <a href="/postagem/{{slug}}"><button class="btn btn-info">Leia mais</button></a>
+            <hr>
+            <small>Categoria: {{categoria.nome}}</small>
+            <br>
+            <small>Data de publicação: {{data}}</small>            
+        </div>
+    </div>
+{{else}}
+    <h5>Nenhuma postagem</h5>
+{{/each}}
