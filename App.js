@@ -3,7 +3,7 @@
     const handlebars = require('express-handlebars');
     const bodyParser = require('body-parser');
     const mongoose = require('mongoose');    
-    const porta = process.env.porta || 8081;
+    const port = process.env.port || 8081;
     const app = express();
     const admin = require('./routes/admin'); //Coleta todas as Rotas
     const path = require('path');
@@ -138,7 +138,7 @@
 
 // Server
 
-        app.listen(porta,()=>{
+        app.listen(port,()=>{
             console.log("Servidor Iniciado com Sucesso");
         })
 
